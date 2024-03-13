@@ -1,0 +1,274 @@
+/* Assuming .Container matches your JSX */
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(170, 171, 171);
+}
+.Todo-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 200px; 
+
+}
+
+.desc_area {
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block; 
+    border-color: rgb(23, 109, 229);
+    
+}
+
+.desc_area {
+    width: 500px;
+    height: 100px;
+}
+
+.titleinput{
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    display: block; 
+    width: 500px;
+    border-style: solid;
+    border-color: rgb(23, 109, 229);
+
+}
+
+.displaytodoslist{
+    border-style: groove;
+    font-family: 'Times New Roman', Times, serif;
+    width: 400px;
+    border-radius: 20px;
+    background-color: rgb(243, 242, 242);
+    white-space: pre-line; /* Add this line */
+    
+}
+
+.displaytodoslist h2{
+    font-weight: bold;
+}
+.displaytodoslist h3{
+    font-weight:lighter;
+}
+.todoscontainer{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content:center; 
+    gap: 10px; 
+}
+
+.add_btn{
+    width: 100px;
+    margin-left: 210px;
+    border-color: blue;
+
+}
+
+.moreIcon {
+    cursor: pointer;
+    padding: 10px; /* Adjust as needed for spacing */
+  
+}
+
+.menu {
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.menu ul li:hover {
+    background-color: #f1f1f1;
+}
+.nav_buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+    
+}
+
+.todolist_btn{
+    border-style: solid;
+    border-color: rgb(35, 126, 211);
+
+}
+.completed_btn{
+    border-style: solid;
+    border-color: rgb(35, 126, 211);
+    
+}
+
+
+
+.img-Container img{
+    width: 60px;
+    height: auto;
+    float: left;
+    margin-right: 5px;
+
+}
+
+
+.img-Container {
+    display: flex;
+    align-items: center; /* This will vertically center align the items */
+    justify-content: flex-start; /* This aligns items to the start of the container, can be adjusted */
+    /* Other properties as needed, for example: */
+    position: fixed; /* Keep if you need the container to stay in place */
+    top: 0px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    z-index: 100; /* Ensure it's above other content */ 
+    background-color: rgb(225, 225, 225);  
+    width: 98.6%;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+
+    width: 100%;
+    height: 80%;
+    border-style: solid;
+    border-color: rgb(224, 227, 219);
+    background-color: rgb(21, 162, 232);
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 270px;
+    margin: 120px auto;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5%;
+    border-style: solid;
+    border-color: rgb(3, 104, 182);
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: medium;
+    color: #31618a;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content h2 span {
+    font-style: italic;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 100px;
+    box-shadow: 30px #2ecc71;
+
+}
+
+.login-btn,
+.signup-btn {
+    background-color: white;
+    color: #000000;
+    padding: 10px;
+
+
+    cursor: pointer;
+    text-decoration: none;
+    flex: 1;
+
+
+}
+
+.login-btn a,
+.signup-btn a {
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Inherit color from parent */
+
+}
+
+
+.signup-btn {
+
+    margin-left: 80px;
+    /* Add margin to separate the buttons */
+    border-style: solid;
+    border-color: rgb(3, 104, 182);
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-radius: 13px;
+}
+
+.login-btn {
+
+    border-style: solid;
+    border-color: rgb(3, 104, 182);
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-radius: 13px;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+    background-color: #188bd7;
+}
+.activeButton {
+    background-color: blue;
+    color: white;
+  }
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+
+    .content {
+        width: 90%;
+        height: auto;
+        margin: 50px auto;
+    }
+
+    .button-container {
+        width: 80%;
+        margin-top: 50px;
+    }
+}
+
+
