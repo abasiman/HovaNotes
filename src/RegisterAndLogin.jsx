@@ -61,7 +61,7 @@ function RegisterAndLogin() {
       <header>
         <div className="head">
           <div className="imgContainer">
-            <img className="header-img" src="/src/hovalogo.png" alt="Hova Logo" />
+            {/* <img className="header-img" src="/src/hovalogo.png" alt="Hova Logo" /> */}
             <h4>Hova Notes</h4>
           </div>
         </div>

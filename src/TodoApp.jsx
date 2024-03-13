@@ -108,7 +108,7 @@ const TodoApp = () => {
         <header>
             <div className="head">
                 <div className="img-Container">
-                    <img src="/src/hovalogo.png" alt="Logo"/>
+                   {/*  <img src="/src/hovalogo.png" alt="Logo"/> */}
                     <h4>Hova Notes</h4>
                 </div>
             </div>
